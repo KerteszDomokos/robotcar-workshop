@@ -18,6 +18,7 @@ int motorSpeed = 200;
 int turnTimeFor90Deg = 600; // Calibrate this for your specific robot
 int obstacleThreshold = 10; // Distance in cm to trigger avoidance
 
+//this function runs ONCE every restart/powerup
 void setup() {
   // Motor pins
   pinMode(enA, OUTPUT);
@@ -38,6 +39,7 @@ void setup() {
   delay(2000); // 2 second startup delay to get ready
 }
 
+//this function runs REPEATEDLY after setup() completes
 void loop() {
   // 1. Measure distance
   int distance = measureDistance();
@@ -66,13 +68,11 @@ void loop() {
 
 // --- FUNCTIONS ---
 
-// New function to measure distance in cm
+// Function to measure distance in cm
 int measureDistance() {
-  // Clear the trigPin
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
   
-  // Send 10 microsecond pulse
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
@@ -80,11 +80,13 @@ int measureDistance() {
   // Read the duration of the echo
   long duration = pulseIn(echoPin, HIGH);
   
-  // Calculate distance (Speed of sound is ~343m/s or 0.0343 cm/uS)
+  // Calculate distance (speed of sound is ~343m/s)
   int distanceCm = duration * 0.034 / 2;
   
   return distanceCm;
 }
+
+// Motor functions
 
 void goForward() {
   digitalWrite(in1, LOW);
