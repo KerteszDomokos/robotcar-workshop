@@ -40,7 +40,7 @@ void setup() {
 }
 
 //this function runs REPEATEDLY after setup() completes
-void loop() {
+void loop() { // it is a while(true) loop
   // 1. Measure distance
   int distance = measureDistance();
   Serial.print("Distance: ");

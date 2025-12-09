@@ -16,8 +16,24 @@ My design is available here: [Onshape link](https://cad.onshape.com/documents/c0
 
 This model can be printed on basically every 3D printer, just make sure you have the right orientation of the model.
 
-## Electoronics
+## Wiring
 
 
-
+| Arduino pin | Connected |
+|-----------|----------|
+| D3 | L298N ENB |
+| D4 | L298N IN4 |
+| D5 | L298N IN3 |
+| D6 | L298N IN2 |
+| D7 | L298N IN1 |
+| D9 | ENA |
+| D10 | HC-SR04 echo |
+| D11 | HC-SR04 trig |
+| 5V | Battery + |
+| 5V | L298N +5V |
+| 5V | L298N +12V |
+| GND | Battery GND |
+| GND | L298N GND |
+| GND | HC-SR04 GND |
+| 5V | HC-SR04 Vcc |
 
