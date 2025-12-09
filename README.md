@@ -58,3 +58,5 @@ We were using an Arduino nano, but the project can be made using other controlle
 ![Connections with an Arduino Nano](docs/image.png)
 
 ## Presentation
+
+The presentation is available both in pdf and in pptx format in the docs directory. ![Presentation](docs/workshop-presentation)
