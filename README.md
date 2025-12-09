@@ -59,4 +59,4 @@ We were using an Arduino nano, but the project can be made using other controlle
 
 ## Presentation
 
-The presentation is available both in pdf and in pptx format in the docs directory. ![Presentation](docs/workshop-presentation)
+The presentation is available both in pdf and in pptx format in the docs directory. ![Presentation](docs/workshop-presentation.pdf)
